@@ -1,0 +1,37 @@
+/* Responsividade para telas menores que 1025px */
+@media (max-width: 1025px) {
+   
+    section#inicio {
+        background-attachment: scroll !important; /* Remove o efeito de paralaxe */
+    }
+    .container{
+        max-width: 100% !important; /* Garante que o container ocupe toda a largura */
+    }
+    i.menu-mobile {
+        display: flex; /* Exibe o ícone do menu móvel */
+    }
+    section#inicio  h2{
+        font-size: 1.5rem;
+    }
+    span#subtitle {
+        font-size: 1.5rem;
+    }
+       body.menu-aberto {
+    overflow: hidden;
+    width: 100%;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5); /* escurece o fundo */
+  z-index: 9998;
+  display: none;
+}
+body.menu-aberto #overlay {
+  display: block;
+}
+
+}

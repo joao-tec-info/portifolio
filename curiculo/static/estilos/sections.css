@@ -1,0 +1,132 @@
+/* Estiliza a section de início com imagem de fundo e centralização */
+section#inicio {
+    
+    background-image: url("/static/img/backgroun.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #253474;
+}
+
+/* Estiliza o título principal da section início */
+section#inicio h2{
+    font-size: 5rem;
+    display: flex;
+}
+
+/* Estiliza o subtítulo da section início */
+section#inicio span#subtitle {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Adiciona sombra ao texto */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estiliza a div do arraste */
+div#arraste {
+    height: 10rem;
+    width: 100%;
+    height: auto;
+}
+
+/* Centraliza e alinha o nome na section início */
+.meu-nome {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contatobg{
+   box-shadow: 0 4px 8px #2b2d44;
+   background-color: #feffff;
+}
+section#sobre{
+   box-shadow: 0 4px 8px #2b2d44;
+   background-color: #feffff;
+
+}
+#portifoliobg{
+   box-shadow: 0 4px 8px #2b2d44;
+   background-color: #feffff;
+}
+#curriculobg{
+   box-shadow: 0 4px 8px #2b2d44;
+   background-color: #feffff;
+}
+#lista-habilidades{
+    display: flex;
+    flex-direction: row;
+    background-color: #feffff;
+    box-shadow: 0 4px 8px #2b2d44;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+#foto-sobre img{
+    max-width: 10px;
+    max-height: 10px;
+}
+
+#list-sobre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cr .cr-title {
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #2b2d44;
+
+}
+.cr .cr-item {
+    padding: 0 0 10px 20px;
+    margin-top: -10px;
+    border-left: #253474 solid 2px;
+    position: relative;
+    
+}
+
+
+.cr .cr-item h5{
+    line-height: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'poppins', sans-serif;
+    color: #2b2d44;
+    margin-bottom: 10px;
+}
+.cr .cr-item h5{
+    background: #8e8c6927;
+    
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.cr .cr-item::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #feffff;
+    border: #253474 solid 2px;
+    border-radius: 50%;
+}

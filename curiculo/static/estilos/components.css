@@ -1,0 +1,52 @@
+/* Estiliza o ícone do menu mobile fixo no topo direito */
+i.menu-mobile {
+    transition: all 0.5s ease;
+    position: fixed;
+    top: 20px;      /* Distância do topo */
+    right: 20px;    /* Distância da direita */
+    z-index: 99999;
+    font-size: 2rem;
+    background-color: #e68d15;
+    border-radius: 40%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev{
+    margin-left: -5.1rem;
+}
+.carousel-control-next{
+    margin-right: -5.1rem;
+}
+.carousel-indicators{
+    margin-bottom: -25px;
+}
+
+/* Barra de rolagem personalizada com fundo transparente */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Fundo transparente */
+::-webkit-scrollbar-track {
+  background: #253474;
+  border-radius: 5px;
+}
+
+/* "Thumb" colorido com borda para destacar no fundo */
+::-webkit-scrollbar-thumb {
+  background-color: #0077cc;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+
+/* Efeito no hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #005fa3;
+}

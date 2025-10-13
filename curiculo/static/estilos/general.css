@@ -1,0 +1,21 @@
+/* Define fonte padrão e tamanho da página */
+html,body{
+    font-family: Ubuntu , arial ;
+    width: 100%;
+    height: 100%;
+}
+
+/* Remove sublinhado dos links */
+a{text-decoration: none;}
+
+/* Remove marcadores e espaçamento das listas */
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Ajusta o espaçamento dos itens da lista (pode ser sobrescrito abaixo) */
+ul li{
+    margin-top: auto;
+}
