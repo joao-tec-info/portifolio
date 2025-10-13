@@ -60,8 +60,8 @@ body{
 /* Estiliza os links dos ícones sociais */
 .social a{
     font-size: 1rem;
-    background: #2b2d44; /* cor de fundo dos ícones */
-    color: #feffff;
+    background: #e68d15; /* cor de fundo dos ícones */
+    color: #253474;
     padding: 0.6rem;
     margin-right: 1rem;
     border-radius: 50%;
@@ -105,7 +105,7 @@ body{
 
 /* Estiliza os links do menu de navegação */
 .navMenu a, .navMenu a:focus {
-    color: #2b2d44;
+    color: #e68d15;
     transition: 0.3s;
     font-size: 19px;
     width: 100%;         /* Ocupa toda a largura */
