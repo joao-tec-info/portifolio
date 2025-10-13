@@ -41,12 +41,12 @@ i.menu-mobile {
 
 /* "Thumb" colorido com borda para destacar no fundo */
 ::-webkit-scrollbar-thumb {
-  background-color: #0077cc;
+  background-color: #e68d15;
   border-radius: 5px;
   border: 2px solid transparent;
 }
 
 /* Efeito no hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #005fa3;
+  background-color: #b36b11;
 }

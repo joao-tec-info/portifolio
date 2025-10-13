@@ -1,0 +1,118 @@
+/* Animações para o site */
+
+/* Keyframe para fade-in da esquerda */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Keyframe para fade-in da direita */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Keyframe para fade-in de cima */
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframe para fade-in de baixo */
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Keyframe para zoom-in */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Keyframe para fade-in de imagens */
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Classe para aplicar fade-in da esquerda */
+.fade-in-left {
+    opacity: 0;
+    animation: fadeInLeft 1s ease-out forwards;
+}
+
+/* Classe para aplicar fade-in da direita */
+.fade-in-right {
+    opacity: 0;
+    animation: fadeInRight 1s ease-out forwards;
+}
+
+/* Classe para aplicar fade-in de cima */
+.fade-in-top {
+    opacity: 0;
+    animation: fadeInTop 1s ease-out forwards;
+}
+
+/* Classe para aplicar fade-in de baixo */
+.fade-in-bottom {
+    opacity: 0;
+    animation: fadeInBottom 1s ease-out forwards;
+}
+
+/* Classe para aplicar zoom-in */
+.zoom-in {
+    opacity: 0;
+    animation: zoomIn 1s ease-out forwards;
+}
+
+/* Classe para aplicar fade-in em imagens */
+.fade-in-image {
+    opacity: 0;
+    animation: fadeInImage 1.5s ease-out forwards;
+}
+
+/* Animação para barras de progresso */
+.progress-bar {
+    width: 0%;
+    transition: width 3s ease-out; /* Aumentado para 3s para mais lentidão */
+}
+
+/* Classe para animar barra */
+.animate-progress {
+    width: var(--progress-width);
+}
