@@ -1,7 +1,7 @@
 /* Estiliza a section de início com imagem de fundo e centralização */
 section#inicio {
     
-    background-image: url("/static/img/backgroun.png");
+    background-image: url("../imagens/backgroun.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
