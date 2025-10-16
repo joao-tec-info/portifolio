@@ -1,3 +1,7 @@
 #portifolio img{
 height: 40vh;    
 } 
+#portifolio .card-body{
+    text-align: center;
+    height: 10vh;   
+}
