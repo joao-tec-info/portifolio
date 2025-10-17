@@ -418,21 +418,21 @@
                     </div>
                     <div class="col-md-7 mt-3">
                         <div class="card p-5 shadow border-0">
-                            <form>
+                            <form id="contact-form">
                                 <h4>Entre em Contato</h4>
                                 <div class="mb-3">
                                     <label for="nome" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                                    <input type="text" class="form-control" id="nome" name="from_name" placeholder="Seu nome" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label">E-mail</label>
-                                    <input type="email" class="form-control" id="email"
-                                        placeholder="Seu e-mail">
+                                    <input type="email" class="form-control" id="email" name="from_email"
+                                        placeholder="Seu e-mail" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="mensagem" class="form-label">Mensagem</label>
-                                    <textarea class="form-control" id="mensagem" rows="4"
-                                        placeholder="Sua mensagem"></textarea>
+                                    <textarea class="form-control" id="mensagem" name="message" rows="4"
+                                        placeholder="Sua mensagem" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Enviar</button>
                             </form>
@@ -482,6 +482,22 @@
         </footer>
 
     </main>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  emailjs.init("O9HDcb_8AtxQ80yi9");
+
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_w8flnp9', 'template_5h5chcs', this)
+      .then(() => {
+        alert('Mensagem enviada com sucesso!');
+        this.reset(); // Limpa o formulário após envio
+      }, (error) => {
+        alert('Erro ao enviar: ' + JSON.stringify(error));
+      });
+  });
+</script>
     <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/animations.js"></script>

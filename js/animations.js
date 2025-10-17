@@ -137,6 +137,22 @@ function animateInicio() {
     }
 }
 
+// Função para animar o formulário de contato
+function animateContactForm() {
+    const form = document.getElementById('contact-form');
+    if (form) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('zoom-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        observer.observe(form);
+    }
+}
+
 // Inicializar animações quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', () => {
     animateProgressBars();
@@ -146,4 +162,5 @@ document.addEventListener('DOMContentLoaded', () => {
     animateImages();
     animateContainers();
     animateInicio();
+    animateContactForm();
 });
