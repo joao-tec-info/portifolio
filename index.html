@@ -534,7 +534,18 @@ Tenho trabalhado com HTML, CSS e JavaScript, além de explorar frameworks e bibl
   document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_w8flnp9', 'template_5h5chcs', this)
+    // Criar mensagem completa com nome, email e mensagem
+    const nome = this.from_name.value;
+    const email = this.from_email.value;
+    const mensagem = this.message.value;
+    const mensagemCompleta = `Nome: ${nome}\nEmail: ${email}\n\nMensagem:\n${mensagem}`;
+
+    // Enviar com mensagem completa
+    emailjs.send('service_w8flnp9', 'template_5h5chcs', {
+      from_name: nome,
+      from_email: email,
+      message: mensagemCompleta
+    })
       .then(() => {
         alert('Mensagem enviada com sucesso!');
         this.reset(); // Limpa o formulário após envio
